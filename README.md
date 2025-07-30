@@ -102,7 +102,7 @@ Setup Instructions
    API Endpoints
    Base URL
    ```
-   http://localhost:5000/api/v1/auth
+   http://localhost:5000/api/delivery/auth
    ```
    POST /register
    Register a new user and send an OTP via AfroMessage.
@@ -184,7 +184,7 @@ Setup Instructions
    In Postman, create a collection named “Auth API Tests”.
    Set Up Environment:
    Create an environment (e.g., “Test Env”) with variables:
-   baseUrl: http://localhost:5000/api/v1
+   baseUrl: http://localhost:5000/api/delivery
    accessToken: (Leave blank, set dynamically)
    refreshToken: (Leave blank, set dynamically)
    Add Requests:

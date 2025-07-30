@@ -23,7 +23,7 @@ Promise.all([connectDB(), connectRedis()]).catch((err) => {
 });
 
 // API Routes
-app.use("/api/auth", authRoles);
+app.use("/api/delivery/auth", authRoles);
 
 // Error handling
 app.use((err, req, res, next) => {
