@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_RefRESH_SECRET=${JWT_RefRESH_SECRET}
+      - FRONTEND_URL=http://localhost:3000
+      - AFROMESSAGE_API_TOKEN=${AFROMESSAGE_API_TOKEN}
+      - AFROMESSAGE_SENDER_ID=${AFROMESSAGE_SENDER_ID}
+      - AFROMESSAGE_IDENTIFIER_ID=${AFROMESSAGE_IDENTIFIER_ID}
+      - REDIS_URL=${REDIS_URL}
+volumes:
+  mongo-data:
