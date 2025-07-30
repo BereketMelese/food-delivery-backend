@@ -1,4 +1,5 @@
-Food Delivery Backend - Authentication Module
+Food Delivery Backend 
+Authentication Module
 This is the authentication module for a food delivery platform, built with Node.js, Express.js, MongoDB Atlas, Redis Cloud, and AfroMessage for OTP-based user verification. It supports user registration, login, OTP verification, token refresh, and role-based access control (RBAC) for roles like customer, restaurant, driver, and admin. The module uses JSON Web Tokens (JWT) for secure authentication and Redis for temporary OTP storage.
 Features
 User Registration: Create accounts with email, phone, password, and role, triggering an OTP via AfroMessage.
